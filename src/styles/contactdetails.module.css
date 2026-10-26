@@ -1,0 +1,10 @@
+.button {
+    margin-top: 16px;
+}
+.detail {
+    height: 40px;
+}
+.label {
+    display: inline-block;
+    width: 150px;
+}

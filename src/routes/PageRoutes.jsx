@@ -1,14 +1,22 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'
 
-import { Home } from '../pages/home';
-import { About } from '../pages/about';
-import { Contact } from '../pages/contact';
+import { Layout } from '../components/Layout'
+
+import { Home } from '../pages/Home'
+import { NotFound } from '../pages/NotFound'
+
+import { AddContact } from '../components/AddContact'
+import { ContactList } from '../components/ContactList'
+import { ContactDetails } from '../components/ContactDetails'
 
 export const PageRoutes = () => (
-    <Routes>
+  <Routes>
+    <Route element={<Layout />}>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-  )
+      <Route path="/contacts/add" element={<AddContact/>} />
+      <Route path="/contacts" element={<ContactList/>} />
+      <Route path="/contacts/:id" element={<ContactDetails/>} />
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  </Routes>
+)

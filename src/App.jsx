@@ -1,22 +1,13 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom'
+import { PageRoutes } from './routes/PageRoutes.jsx'
+import {ContactsContextProvider} from './contexts/ContactsContext'
 
-import { PageRoutes } from './routes/PageRoutes.jsx';
-import { Navigation } from './components/navigation.jsx';
-
-
-import './App.css'
-
-function App() {
-
-  return (
+const App = () => (
+  <ContactsContextProvider>
     <BrowserRouter>
-      <Navigation />
-      <div style={{ padding: '20px' }}>
-        <PageRoutes />
-      </div>
+      <PageRoutes />
     </BrowserRouter>
-  );
-}
+  </ContactsContextProvider>
+)
 
 export default App

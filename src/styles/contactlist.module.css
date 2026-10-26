@@ -1,0 +1,21 @@
+.contact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 16px;
+}
+.even {
+    background-color: #2e303a;
+}
+.name {
+    flex-basis: 150px;
+}
+.header {
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: flex-end;
+    padding-right: 17px;
+}
+.endItem {
+    margin-left: auto;
+}

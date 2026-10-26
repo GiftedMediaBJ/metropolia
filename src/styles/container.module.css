@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+.page {
+    padding: 24px;
+}
+
+.nav {
+    padding: 0;
+}
+
+.dark {
+    background-color: #16171d;
+}
+
+.light {
+    background-color: #2e303a;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,53 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Colors */
+
+.primary {
+    --button-color: cornflowerblue;
+    --button-hover: royalblue;
+}
+
+.secondary {
+    --button-color: orange;
+    --button-hover: darkorange;
+}
+
+/* Variants */
+
+.contained {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    color: #fff;
+
+    &:hover {
+        background-color: var(--button-hover);
+        border-color: var(--button-hover);
+    }
+}
+
+.outlined {
+    background-color: transparent;
+    border-color: var(--button-color);
+    color: var(--button-color);
+
+    &:hover {
+        background-color: var(--button-color);
+        color: #fff;
+    }
+}
+
+.button.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}

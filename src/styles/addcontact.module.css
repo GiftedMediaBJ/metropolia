@@ -1,0 +1,15 @@
+.formField {
+    min-height: 40px;
+}
+.label {
+    display: inline-block;
+    width: 150px;
+}
+.error {
+    min-height: 40px;
+}
+.alert {
+    font-size: 12px;
+    color: orangered;
+    padding-top: 2px;
+}

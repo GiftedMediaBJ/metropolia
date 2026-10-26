@@ -1,23 +1,10 @@
 nav {
-    height: 50px;
-    border-bottom: #9ca3af 1px solid;
-    box-shadow: rgba(155, 155, 255, 0.3) 0px 5px 8px;
-}
-
-.button {
-    display: inline-block;
-    height: 40px;
-    width: 75px;
-    margin: 5px 6px 0 0;
-    background-color: cornflowerblue;
-    border: none;
-    cursor: pointer;
-
-    &:hover {
-        background-color: darkblue;
-    }
-
-    &.active {
-        background-color: mediumblue;
+    height: 60px;
+    border-bottom: 1px solid #9ca3af;
+    display: flex;
+    align-items: center;
+    & > div {
+        display: flex;
+        gap: 10px;
     }
 }
